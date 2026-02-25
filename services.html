@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shears & Blade | Services</title>
+    
+    <!-- Fonts -->
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0F0F0F',
+                            dark: '#161616',
+                            gray: '#222222',
+                            gold: '#C6A75E',
+                            white: '#FFFFFF',
+                        }
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        opensans: ['Open Sans', 'sans-serif'],
+                    },
+                    letterSpacing: {
+                        widest: '.2em',
+                        wider: '.1em',
+                    }
+                }
+            }
+        }
+    </script>
+
+  
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-brand-black">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6 px-6 md:px-12 border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center reveal">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-montserrat tracking-wider text-brand-white group flex items-center gap-2">
+                <i class="ph ph-scissors text-brand-gold text-3xl transition-transform group-hover:-rotate-45"></i>
+                SHEARS <span class="text-brand-gold">&</span> BLADE
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 font-opensans text-sm tracking-wider uppercase font-semibold">
+                <a href="index.html#about" class="text-gray-300 hover:text-brand-gold transition-colors">About</a>
+                <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors">Services</a>
+                <a href="index.html#gallery" class="text-gray-300 hover:text-brand-gold transition-colors">Gallery</a>
+                <a href="index.html#testimonials" class="text-gray-300 hover:text-brand-gold transition-colors">Reviews</a>
+                <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services" target="_blank" class="border border-brand-gold text-brand-gold px-6 py-2 hover:bg-brand-gold hover:text-brand-black transition-all duration-300">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-white focus:outline-none">
+                <i class="ph ph-list text-3xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-brand-black/95 backdrop-blur-md z-[100] hidden flex-col items-center justify-center gap-8 text-xl font-montserrat tracking-widest transition-opacity duration-300">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-brand-white hover:text-brand-gold">
+            <i class="ph ph-x text-4xl"></i>
+        </button>
+        <a href="index.html#about" class="mobile-link text-white hover:text-brand-gold transition-colors">About</a>
+        <a href="#" class="mobile-link text-white hover:text-brand-gold transition-colors">Services</a>
+        <a href="index.html#gallery" class="mobile-link text-white hover:text-brand-gold transition-colors">Gallery</a>
+        <a href="index.html#testimonials" class="mobile-link text-white hover:text-brand-gold transition-colors">Reviews</a>
+        <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services" target="_blank" class="mobile-link bg-brand-gold text-brand-black px-8 py-3 mt-4 animate-ripple">Book Now</a>
+<a href="tel:+17377338093" class="w-full sm:w-auto border border-white text-white font-montserrat font-black tracking-wider px-8 uppercase text-sm hover:border-brand-gold hover:text-brand-gold transition-colors duration-300 text-center flex items-center justify-center gap-2 h-14">
+                        <i class="ph ph-phone text-lg"></i> Call Now
+                    </a>
+    </div>
+
+ 
+    <!-- Services Section -->
+    <section id="services" class="py-24 md:py-32 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 mt-11">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl tracking-wider mb-4">Our Services</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mb-6"></div>
+                <p class="font-opensans text-gray-400 max-w-2xl mx-auto font-light">Precision grooming tailored for the modern gentleman. Experience unrivaled attention to detail.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-1 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-scissors text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$60</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Haircut</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 50 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Indulge in a luxurious haircut experience with our team of professional stylists. Stay ahead of the latest trends while enjoying a relaxing session tailored just for you. Book your appointment now for a rejuvenating hair transformation!</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/LXLFGSKMJJ6MDVUJQMNES44Y" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-2 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-footprints text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$40</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Reflexology Session</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 30 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Reflexology, also known as Zone Therapy, is an alternative medical practice involving the application of pressure to specific points on head, neck, feet, ears and hands. This is performed using thumb, finger and hand massage techniques with or without the use oils. This helps to relieve stress, feel relaxed as well as give you more energy. Pamper yourself and book today.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/VPTZEE6LOEMKQLMN6RADTSIX" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-3 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-user text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$25</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Beard Sculpting</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 15 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Experience the art of beard sculpting with our skilled professionals. Achieve precise shaping and stylish designs to elevate your look. Book your appointment now for easy maintenance and a perfectly sculpted beard.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/SOLSPSC5FLFHN25VZFDNWIX6" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-4 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-drop text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$25</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Mens Wash and style</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 20 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Experience the ultimate in hair care with our Wash and Style service. Our professional stylists provide gentle cleansing and versatile styling to ensure you achieve the perfect look. Book your appointment now for professional results that will leave you feeling refreshed and confident.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/RQ6MPQTMR3M5SXT54AR7UKJR" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-1 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-waves text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$50</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Mini Facial</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 30 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Pamper yourself with our exclusive Mini Facial service, featuring a hydrating formula that revitalizes your skin. Enjoy the convenience and easy application during your personalized appointment. Book now for a refreshing and rejuvenating experience.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/RXVTG23VPYKNRSYFEVI7NGWU" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-2 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$20</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Shampoo and Rinse</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 15 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">This Shampoo and Rinse service features a nourishing formula designed to cleanse, repair, and revitalize your hair using natural ingredients. Book your appointment today for a rejuvenating hair care experience tailored to your needs.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/D6KHKFAPU3TV6XZLCDSFHT2F" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 7 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-1 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$25</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Hair and Scalp Exfoliating Treatment</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 35 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Our Hair and Scalp Exfoliating Treatment is designed to cleanse and rejuvenate your scalp using nourishing ingredients that promote healthy hair growth. Book your personalized appointment today for a revitalized scalp and refreshed hair.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/TRIFSWKJPKRE6UC4XL7COQLN" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                 <!-- Service Card 8 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-2 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$35</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Beard Sculpting with Straight Blade & Hot Towel</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 30 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Experience a classic straight blade shave combined with a soothing hot towel treatment for ultimate relaxation and precision grooming. This service delivers a timeless, professional shave tailored to your preferences, bookable as part of your appointment.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/U6YHL7OLYZXL7RPNPIL23SYJ" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+               <!-- Service Card 9 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-1 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$40</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Complete Shave (Straight Blade)</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 40 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">The Complete Shave service provides a precise straight blade shave for a smooth, clean finish, perfect for achieving an all-over bald look. Book your appointment today for a professional and meticulous grooming experience.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/2WOIZMLBATTONU7YOHJ4YAEN" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 10 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-2 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$40</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Upper Torso Shave (Front or Back)</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 30 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Our Upper Torso Shave service ensures irritation-free skin with meticulous care and precision. Book your appointment today for long-lasting results and a comfortable grooming experience tailored to your needs.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/SNINBI4OAKVZSHS47EXNZEEH" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 11 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-1 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$85</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Full Service</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 1 Hour 10 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Indulge in the ultimate grooming experience with our Full Service appointment. Treat yourself to a precision haircut, expert beard sculpting, a relaxing hot towel treatment, and a luxurious straight blade shave. Book now for a grooming session tailored just for you.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/44SYBPE33OT3TK64KZH3RF5R" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 12 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-2 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">$90</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Full Service Plus</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 1  Hour 20 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Experience our Full Service Plus appointment where you'll benefit from our comprehensive offerings which includes a Hair Cut, Beard Sculpting, Hot Towel, Straight Blade Shave, Scalp Massage, Shampoo upon request. Our professional expertise, and unwavering commitment to customer satisfaction. Book now to enjoy a premium Full service Plus tailored just for you!</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/7XYFKPJINUSYWZVCSYA7CEEX" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 13 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-1 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">Call</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Color</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 2 Hours</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Our professional color service offers a wide range of vibrant hues and high-quality pigments tailored to your preferences. Book a personalized appointment to achieve a look that perfectly complements your style. Call us to discuss your color needs or to just schedule a time for a free 15 minute Consultation</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/54ETXFCCK6XXGY626CJ6PKNX" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+
+                <!-- Service Card 14 -->
+                <div class="bg-brand-black border border-white/5 hover:border-brand-gold/50 p-8 transition-all duration-150 group reveal reveal-delay-2 flex flex-col h-full">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="ph ph-wind text-3xl text-gray-600 group-hover:text-brand-gold transition-colors"></i>
+                            <span class="font-montserrat font-bold text-xl text-brand-gold">Call</span>
+                        </div>
+                        <h3 class="text-xl tracking-wide mb-2">Braid / Twist Service</h3>
+                        <p class="text-xs font-opensans text-gray-500 mb-4 uppercase tracking-widest"><i class="ph ph-clock mr-1"></i> 2 Hours 15 Mins</p>
+                        <p class="font-opensans text-sm text-gray-400 font-light mb-8">Our professional braid and twist service offers expertly styled, creative looks tailored to your preferences. Book your appointment for a personalized experience and unique hairstyles that suit any occasion. Please Call or Text For Consultation over the phone or in Person.</p>
+                    </div>
+                    <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services/4AFJSUJPHYNH7QVPJSRGEFPX" target="_blank" class="block w-full text-center border border-white/20 text-white font-montserrat text-xs tracking-widest uppercase py-3 group-hover:bg-brand-gold group-hover:border-brand-gold group-hover:text-brand-black transition-all mt-auto">Book</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Online Booking CTA Section -->
+    <section id="book" class="relative py-32 bg-brand-black overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-gray/20 to-transparent"></div>
+        <div class="absolute -right-20 -top-20 text-[20rem] text-white/[0.02] font-montserrat font-black leading-none pointer-events-none">
+            BLADE
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal">
+            <h2 class="text-5xl md:text-6xl tracking-wider mb-6">Claim Your Chair</h2>
+            <p class="font-opensans text-gray-400 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto">
+                Appointments are highly recommended to ensure the highest quality of service. Ready for your transformation?
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+                <a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services" target="_blank" class="w-full sm:w-auto bg-brand-gold text-brand-black font-montserrat font-black tracking-wider px-10 uppercase text-sm hover:bg-white transition-colors duration-300 flex items-center justify-center h-16 animate-ripple">
+                    Book Appointment
+                </a>
+                <a href="tel:+17377338093" class="w-full sm:w-auto border border-white text-white font-montserrat font-black tracking-wider px-10 uppercase text-sm hover:border-brand-gold hover:text-brand-gold transition-colors duration-300 flex items-center justify-center gap-2 h-16">
+                    <i class="ph ph-phone text-lg"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0A0A] pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div>
+                    <a href="#" class="text-2xl font-montserrat tracking-wider text-brand-white flex items-center gap-2 mb-6">
+                        <i class="ph ph-scissors text-brand-gold text-2xl"></i>
+                        S<span class="text-brand-gold">&</span>B
+                    </a>
+                    <p class="font-opensans text-gray-500 font-light text-sm mb-6 leading-relaxed">
+                        Premium grooming for the modern urban man. Confident, edgy, and uncompromising in quality.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/shearsnblade_austin/" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:border-brand-gold hover:text-brand-gold transition-all">
+                            <i class="ph ph-instagram-logo text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-montserrat tracking-widest text-brand-white text-sm mb-6">Navigation</h4>
+                    <ul class="space-y-4 font-opensans text-gray-500 text-sm font-light">
+                        <li><a href="index.html#about" class="hover:text-brand-gold transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Our Services</a></li>
+                        <li><a href="index.html#gallery" class="hover:text-brand-gold transition-colors">Gallery</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-brand-gold transition-colors">Testimonials</a></li>
+                        <li><a href="https://book.squareup.com/appointments/in6zirpk310qcd/location/L0NP6WNBTTV1E/services" target="_blank" class="hover:text-brand-gold transition-colors">Book Online</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-montserrat tracking-widest text-brand-white text-sm mb-6">Contact</h4>
+                    <ul class="space-y-4 font-opensans text-gray-500 text-sm font-light">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-map-pin text-brand-gold mt-1"></i>
+                            <span>411 Brazos St suite b, Austin, TX 78701, United States</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph ph-phone text-brand-gold"></i>
+                            <a href="tel:+17377338093" class="hover:text-brand-gold transition-colors">(737) 733-8093</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph ph-envelope text-brand-gold"></i>
+                            <a href="mailto:shearsandblade@gmail.com" class="hover:text-brand-gold transition-colors">shearsandblade@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div>
+                    <h4 class="font-montserrat tracking-widest text-brand-white text-sm mb-6">Hours</h4>
+                    <ul class="space-y-4 font-opensans text-gray-500 text-sm font-light">
+                        <li class="flex justify-between border-b border-gray-800 pb-2">
+                            <span>Mon - Sat</span>
+                            <span class="text-white">8:00 AM - 7:00 PM</span>
+                        </li>
+                        <li class="flex justify-between pb-2">
+                            <span>Sunday</span>
+                            <span class="text-brand-gold">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/5 pt-8 text-center font-opensans text-gray-600 text-xs tracking-wider">
+                <p>&copy; <span id="currentYear"></span> Shears & Blade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Set Current Year in Footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-brand-black/95', 'backdrop-blur-md', 'shadow-2xl', 'py-4');
+                navbar.classList.remove('bg-transparent', 'py-6');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-6');
+                navbar.classList.remove('bg-brand-black/95', 'backdrop-blur-md', 'shadow-2xl', 'py-4');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                setTimeout(() => { mobileMenu.style.opacity = '1'; }, 10);
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                mobileMenu.style.opacity = '0';
+                setTimeout(() => { 
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                }, 300);
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // Scroll Reveal Animations via Intersection Observer
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Stop observing once revealed
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => {
+            revealOnScroll.observe(el);
+        });
+    </script>
+</body>
+</html>

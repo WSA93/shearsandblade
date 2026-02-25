@@ -1,0 +1,84 @@
+
+        body {
+            background-color: #0F0F0F;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+        }
+
+        p, a, span, .font-body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Scroll Reveal Animations (Converted to Keyframes to prevent transition conflicts) */
+        @keyframes reveal-up {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        .reveal.active {
+            animation-name: reveal-up;
+            animation-duration: 0.8s;
+            animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+            animation-fill-mode: forwards;
+        }
+        .reveal-delay-1 { animation-delay: 0.15s; }
+        .reveal-delay-2 { animation-delay: 0.3s; }
+        .reveal-delay-3 { animation-delay: 0.45s; }
+        .reveal-delay-4 { animation-delay: 0.6s; }
+
+        /* Subtle Image Filters */
+        .premium-filter {
+            filter: grayscale(100%) contrast(110%);
+            transition: filter 0.5s ease;
+        }
+        .group:hover .premium-filter {
+            filter: grayscale(0%) contrast(100%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F0F0F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222222;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C6A75E;
+        }
+
+        /* Inner Left-to-Right Shimmer/Ripple Animation */
+        @keyframes shimmer-slide {
+            0% { transform: translateX(-250%) skewX(-25deg); }
+            15% { transform: translateX(350%) skewX(-25deg); }
+            100% { transform: translateX(350%) skewX(-25deg); } /* Wait for the rest of the 4 seconds */
+        }
+        .animate-ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        .animate-ripple::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+            animation: shimmer-slide 4s infinite;
+            pointer-events: none; /* Ensure the animation overlay doesn't block clicks */
+        }
+
